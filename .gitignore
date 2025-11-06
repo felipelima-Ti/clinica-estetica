@@ -44,3 +44,7 @@ next-env.d.ts
 
 firebase.js
 /api
+
+/src/app/api/
+/src/app/layout.js
+layout.js
