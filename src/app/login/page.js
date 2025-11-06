@@ -37,7 +37,7 @@ export default function Login() {
       }
     } catch (err) {
       console.error("Erro no login:", err);
-      setMensagem(" Erro ao tentar logar.");
+      setMensagem(" Erro ao tentar logar. ");
     }
   };
 
