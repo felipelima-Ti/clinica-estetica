@@ -113,7 +113,7 @@ export default function Painel(){
           <Link href="/agenda">Agendar atendimento</Link>
         </button>
         <p className="font-bold">Onde nos encontrar</p>
-        <p>Rua fulano de tal nao sei oq lah 1359</p>
+        <p>Rua fulano de tal nao sei oq lah odio veyr</p>
          <p className="mb-10 flex -col items-center mb-20">entre em contato: <b>fulanodetalnaoseioq@gmail.com </b></p>
         </div>
           </div>
