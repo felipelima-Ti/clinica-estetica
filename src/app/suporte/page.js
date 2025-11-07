@@ -49,7 +49,7 @@ return(
             </div>
             <div className="contact-item">
               <strong>💬 Chat</strong>
-              <span>Iniciar chat no app</span>
+              <span>Iniciar chat de app</span>
             </div>
             <div className="contact-item">
               <strong>📞 Telefone</strong>

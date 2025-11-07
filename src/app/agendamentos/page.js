@@ -93,7 +93,7 @@ export default function Agendamentos() {
             </div>
           ))
         ) : (
-          <p>Você ainda não tem agendamentos.</p>
+          <p>Você ainda não tem agendamentos...</p>
         )}
       </div>
     </div>
