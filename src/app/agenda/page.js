@@ -127,7 +127,13 @@ export default function Agenda() {
           Nome do Cliente: <strong>{usuario}</strong>
         </p>
       )}
-
+        <div className="ml-10">
+          <p className="font-bold">Tabela de preços</p>
+          <p>Limpeza de pele: <b>90R$</b></p>
+          <p>Massagem Relaxante: <b>70R$</b></p>
+          <p>Depilaçao a laser: <b>100R$</b></p>
+          <p>Tratamento facial: <b>120R$</b></p>
+        </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-4 border-2 border-gray-200 p-6 rounded-2xl shadow-lg text-white m-5"

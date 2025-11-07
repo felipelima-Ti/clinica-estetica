@@ -34,17 +34,16 @@ return(
             </div>
           </div>
 
-          <h1 id="support-title">Precisa de ajuda?</h1>
+          <h1 id="support-title">Sinta-se avontade para falar conosco</h1>
           <p className="lead">
-            Envie sua dúvida pelo formulário ao lado ou escolha um dos canais
-            abaixo. Respondemos em até 24 horas úteis.
+            Envie-nos uma mensagem pelo formulário ao lado. Respondemos em até 24 horas úteis.
           </p>
 
           <div className="contact-list">
             <div className="contact-item">
             <Link href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWslzCnvVSnXPFtQkjljXHmWmdthSJMkCHnMJTGGGwXGHpTgmPWkSbShDKRJnSnlpZpPdNHtb">
-              <strong>📧 E-mail:</strong>
-              <span>felipelima1114@gmail.com</span>
+              <strong>✉email:</strong><span>DonaBelezaestetica@gmail.com</span>
+              
               </Link>
             </div>
             <div className="contact-item">
@@ -89,7 +88,7 @@ return(
           <textarea
             name="message"
             required
-            placeholder="Descreva o problema..."
+            placeholder="Descreva sua mensagem..."
           />
 
           <button type="submit" className="btn">
