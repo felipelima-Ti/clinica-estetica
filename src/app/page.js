@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   const [usuario, setUsuario] = useState("");
@@ -40,7 +41,9 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen gap-4">
+    <main className="flex flex-col items-center justify-center min-h-screen gap-4 bg-black ">
+            <h2 className="font-bold text-xl">Clinica estetica Dona beleza</h2>
+      <Image src="/fundo.png" width={300} height={400} alt=""/>
       <h1 className="text-2xl font-bold">Cadastro de Usuário</h1>
 
       {!sucesso ? (

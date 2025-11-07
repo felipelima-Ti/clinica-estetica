@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../lib/firebaseConfig"; 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Login() {
   const [usuario, setUsuario] = useState("");
@@ -42,7 +43,9 @@ export default function Login() {
   };
 
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen gap-4">
+    <main className="flex flex-col items-center justify-center min-h-screen gap-4 bg-black">
+      <h2 className="font-bold text-xl">Clinica estetica Dona beleza</h2>
+      <Image src="/fundo.png" width={300} height={400} alt=""/>
       <h1 className="text-2xl font-bold">Faça Login</h1>
 
       <form onSubmit={handleLogin} className="flex flex-col gap-3 w-64">
