@@ -41,9 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 #db
-
 firebase.js
 /api
-
 /src/app/api/
 
