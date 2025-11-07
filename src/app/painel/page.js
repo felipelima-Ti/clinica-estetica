@@ -112,7 +112,7 @@ export default function Painel(){
         >
           <Link href="/agenda">Agendar atendimento</Link>
         </button>
-        <p className="font-bold">Onde nos encontrar</p>
+        <p className="font-bold">Onde nos encontra</p>
         <p>Rua fulano de tal nao sei oq la 1359</p>
          <p className="mb-10 flex -col items-center mb-20">entre em contato: <b>fulanodetalnaoseioq@gmail.com </b></p>
         </div>
