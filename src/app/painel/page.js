@@ -15,8 +15,8 @@ export default function Painel(){
   }, []);
 
     return(
-        <div className="containe">
-            <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white">
+        <div className="ml-10">
+            <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full">
   {/* Esquerda */}
   <div className="flex items-center space-x-3">
     <Image src="/fundo.png" width={50} height={50} alt="Logo" />
@@ -57,25 +57,25 @@ export default function Painel(){
           {/* CARD 1 */}
           <div className="flex flex-col items-center">
             <Image
-              className=" ml-40 border-2 border-gray-200 rounded-xl"
+              className="  border-2 border-gray-200 rounded-xl"
               src="/estetica.jpg"
               alt="Limpeza de pele"
               width={120}
               height={200}
             />
-            <p className=" ml-40 mt-3 text-lg font-medium">
+            <p className=" ml-5 mt-3 text-lg font-medium">
               Limpeza de pele
             </p>
           </div>
            <div className="flex flex-col items-center">
             <Image
-              className=" ml-6 border-2 border-gray-200 rounded-xl"
+              className="  border-2 border-gray-200 rounded-xl"
               src="/masagem.jpg"
               alt="Massagem relaxante"
               width={120}
               height={200}
             />
-            <p className=" ml-7 mt-3 text-lg font-medium">
+            <p className="mt-3 text-lg font-medium">
               Massagem relaxante
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function Painel(){
               width={120}
               height={200}
             />
-            <p className=" ml-8 mt-5 text-lg font-medium">
+            <p className=" ml-2 mt-5 text-lg font-medium">
               Depilaçao a laser
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function Painel(){
               width={120}
               height={200}
             />
-            <p className="ml-5 mt-3 text-lg font-medium">
+            <p className="mt-3 text-lg font-medium">
               Tratamento facial
             </p>
           </div>
