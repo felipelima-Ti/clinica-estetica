@@ -38,27 +38,7 @@ return(
           <p className="lead">
             Envie-nos uma mensagem pelo formulário ao lado. Respondemos em até 24 horas úteis.
           </p>
-
-          <div className="contact-list">
-            <div className="contact-item">
-            <Link href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWslzCnvVSnXPFtQkjljXHmWmdthSJMkCHnMJTGGGwXGHpTgmPWkSbShDKRJnSnlpZpPdNHtb">
-              <strong>✉email:</strong><span>DonaBelezaestetica@gmail.com</span>
-              
-              </Link>
-            </div>
-            <div className="contact-item">
-              <strong>💬 Chat</strong>
-              <span>Iniciar chat de app</span>
-            </div>
-            <div className="contact-item">
-              <strong>📞 Telefone</strong>
-              <span>+55 (32) 98893-4044</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Coluna direita - formulário */}
-        <form onSubmit={handleSubmit} className="form">
+             <form onSubmit={handleSubmit} className="form">
           <label>Nome</label>
           <input name="name" required placeholder="Seu nome" />
 
@@ -98,6 +78,11 @@ return(
             Ao enviar, você receberá um número de protocolo por e-mail.
           </div>
         </form>
+        
+        </div>
+
+        {/* Coluna direita - formulário */}
+     
       </section>
     </main>
 )
