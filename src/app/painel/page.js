@@ -177,7 +177,7 @@ export default function Painel() {
             <h3 className="text-lg font-semibold mb-3">Inscreva-se</h3>
             <p className="text-sm mb-3">
               Ao se inscrever na nossa lista, você sempre receberá nossas últimas notícias e
-              atualizações sobre a empresa.
+              atualizações sobre nossa empresa.
             </p>
             <input
               type="email"
