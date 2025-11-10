@@ -34,14 +34,6 @@ export default function Painel() {
     return () => clearInterval(interval);
   }, [cards.length]);
 
-  const handlePrev = () => {
-    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
-  };
-
-  const handleNext = () => {
-    if (currentIndex < cards.length - 3) setCurrentIndex(currentIndex + 1);
-  };
-
   return (
     <div className="">
       <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full">
