@@ -157,7 +157,7 @@ export default function Painel(){
   </div>
 
   <div className="text-center mt-10 border-t border-black pt-4 text-sm">
-    © 2018 | Dona Beleza. Todos os Direitos Reservados | Design por <a href="#" className="underline">Felipe</a>
+    © 2018 | Dona Beleza. Todos os Direitos Reservados | Design por <a href="https://www.instagram.com/felipelimahbl/" className="underline">Felipe</a>
   </div>
 </footer>
           </div>
