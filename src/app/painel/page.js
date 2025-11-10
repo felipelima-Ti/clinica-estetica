@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Painel() {
   const [usuario, setUsuario] = useState("");
@@ -24,7 +23,6 @@ export default function Painel() {
     }
   }, []);
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
