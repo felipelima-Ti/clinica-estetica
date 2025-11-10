@@ -1,9 +1,17 @@
 Versao de Desenvolvimento
-Um sistema SaaS de agendamento de atendimento de clientes em uma clinica de estetica com implementaçao de
+
+Um sistema SaaS de agendamento de atendimento de clientes em uma clinica de estetica
+
+Acesse agora 👉: https://clinica-estetica-seven.vercel.app/
+
+sitema com implementaçoes com
 
 Agendamento de atendimentos,
+
 Login de usuario,
+
 Consulta de agendamentos do cliente,
+
 Canal de Suporte e atendimento
 
  esse e um Projeto em fase teste oque pode apresentar falhas 😕
