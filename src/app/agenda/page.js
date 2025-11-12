@@ -133,6 +133,7 @@ export default function Agenda() {
           <p>Massagem Relaxante: <b>70R$</b></p>
           <p>Depilaçao a laser: <b>100R$</b></p>
           <p>Tratamento facial: <b>120R$</b></p>
+          <p>Tratamento de Cabelo: <b>150R$</b></p>
         </div>
       <form
         onSubmit={handleSubmit}
@@ -160,6 +161,9 @@ export default function Agenda() {
           </option>
           <option value="Tratamento facial" className="text-black">
             Tratamento facial
+          </option>
+           <option value="Tratamento facial" className="text-black">
+            Tratamento de Cabelo
           </option>
         </select>
 
