@@ -33,6 +33,7 @@ export default function Painel() {
   }, [cards.length]);
 
   return (
+    <main>
     <div className="">
       <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-40"
         >
@@ -71,7 +72,14 @@ export default function Painel() {
     Nós Cuidamos Da Sua <b className="text-rose-300">Beleza!</b>
   </p>
   <div className="flex items-center justify-center ">
-  <button className=" border border-rose-300 w-50 h-10 bg-rose-100 mt-20 text-rose-300">Veja nossas opcoes</button>
+     <button
+  onClick={() => {
+    document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="border border-rose-300 w-50 h-10 bg-rose-100 mt-20 text-rose-300"
+>
+  Conheça nossos serviços
+</button>
   </div>
 </div>
 
@@ -91,6 +99,7 @@ export default function Painel() {
             height={300}
           />
         </div>
+        <section id="servicos">
         <h2 className="flex flex-col items-center mt-10 text-lg">
           Temos tratamento especializado para sua estética, sempre inovando e renovando sua beleza
         </h2>
@@ -123,7 +132,7 @@ export default function Painel() {
             </div>
           </div>
         </div>
-
+            </section>
         <h1 className="flex flex-col items-center mt-8 text-2xl">
           O que você está esperando? Agende agora no botão abaixo
         </h1>
@@ -135,6 +144,7 @@ export default function Painel() {
             <Link href="/agenda">Agendar atendimento</Link>
           </button>
         </div>
+        
       </div>
 
       {/*RODAPE*/}
@@ -208,5 +218,6 @@ export default function Painel() {
         </div>
       </footer>
     </div>
+    </main>
   );
 }
