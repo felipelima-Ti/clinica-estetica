@@ -72,9 +72,12 @@ export default function Painel() {
     Nós Cuidamos Da Sua <b className="text-rose-300">Beleza!</b>
   </p>
   <div className="flex items-center justify-center ">
-     <button
+    <button
   onClick={() => {
-    document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById("servicos");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   }}
   className="border border-rose-300 w-50 h-10 bg-rose-100 mt-20 text-rose-300"
 >
