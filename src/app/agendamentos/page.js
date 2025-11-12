@@ -6,7 +6,7 @@ import { db } from "../lib/firebaseConfig";
 export default function Agendamentos() {
   const [usuario, setUsuario] = useState("");
   const [agendamentos, setAgendamentos] = useState([]);
-  const [ordem, setOrdem] = useState("proximo"); // Variável para controlar a ordenação
+  const [ordem, setOrdem] = useState("proximo");
 
   useEffect(() => {
     const nome = localStorage.getItem("usuarioLogado");
@@ -29,17 +29,17 @@ export default function Agendamentos() {
         id: doc.id,
       }));
 
-      // Ordena os agendamentos conforme a escolha de ordem
+      
       const agendamentosOrdenados = agendamentosList.sort((a, b) => {
         const dataA = new Date(a.data);
         const dataB = new Date(b.data);
 
-        // Se for para ordenar pelo dia mais próximo
+       
         if (ordem === "proximo") {
           return dataA - dataB;
         }
 
-        // Se for para ordenar pela data mais recente (da mais nova para a mais antiga)
+        
         if (ordem === "recente") {
           return dataB - dataA;
         }
@@ -68,7 +68,7 @@ export default function Agendamentos() {
         </p>
       )}
 
-      {/* Filtro de ordenação */}
+    
       <div className="ordenacao-container m-5">
         <label className="" htmlFor="ordenacao">Ordenar por:</label>
         <select

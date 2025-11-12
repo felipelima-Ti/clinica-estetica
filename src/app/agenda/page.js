@@ -74,7 +74,7 @@ export default function Agenda() {
     }
 
     try {
-      // verifica novamente se o horário ainda está livre (garantia)
+
       const q = query(
         collection(db, "agendamentos"),
         where("data", "==", form.data),
@@ -95,7 +95,7 @@ export default function Agenda() {
         observacoes: form.observacoes,
         criadoEm: Timestamp.now(),
       });
-      //envia aki
+      
       await fetch("/api/whatsapp", {
   method: "POST",
   headers: { "Content-Type": "application/json" },

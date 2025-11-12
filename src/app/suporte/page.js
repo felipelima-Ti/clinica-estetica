@@ -1,16 +1,24 @@
 "use client";
 
+import { useEffect } from "react";
+import { useState } from "react";
 import "./suporte.css"
 import Image from "next/image";
 import {Roboto} from 'next/font/google'
 import Link from "next/link";
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400','700'], // normal e negrito
+  weight: ['400','700'], 
 })
 
  
 export default function Suport(){
+  const [usuario, setUsuario] = useState("");
+
+  useEffect(() => {
+    const nome = localStorage.getItem("usuarioLogado");
+    if (nome) setUsuario(nome);
+  }, []);
  
    const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,10 +39,14 @@ return(
             <div>
               <div className="logo-title">Central de Suporte</div>
               <div className="logo-sub">Estamos aqui para ajudar</div>
+            
             </div>
           </div>
 
-          <h1 id="support-title">Sinta-se avontade para falar conosco</h1>
+          <h1 id="support-title">
+               {usuario && (
+          <p>Olá { usuario }</p>
+      )}Sinta-se avontade para falar conosco</h1>
           <p className="lead">
             Envie-nos uma mensagem pelo formulário ao lado. Respondemos em até 24 horas úteis.
           </p>
@@ -81,8 +93,6 @@ return(
         
         </div>
 
-        {/* Coluna direita - formulário */}
-     
       </section>
     </main>
 )

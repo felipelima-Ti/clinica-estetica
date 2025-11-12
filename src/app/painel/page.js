@@ -34,9 +34,11 @@ export default function Painel() {
 
   return (
     <div className="">
-      <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full">
-        <div className="flex items-center space-x-3">
-          <Image src="/fundo.png" width={50} height={50} alt="Logo" />
+      <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-40"
+        >
+        <div className="flex items-center justify-center space-x-3">
+          <Image className="" src="/fundo.png" width={50} height={50} alt="Logo" />
+          
           <span className="font-bold text-lg">Dona Beleza</span>
         </div>
 
@@ -58,12 +60,29 @@ export default function Painel() {
           </li>
         </ul>
       </header>
+      <div
+  className="items-center justify-center w-full h-[750px] bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/clinicaa.jpg')",
+    backgroundRepeat: "no-repeat"
+  }}
+>
+  <p className=" pt-80 text-white text-4xl font-bold text-center">
+    Nós Cuidamos Da Sua <b className="text-rose-300">Beleza!</b>
+  </p>
+  <div className="flex items-center justify-center ">
+  <button className=" border border-rose-300 w-50 h-10 bg-rose-100 mt-20 text-rose-300">Veja nossas opcoes</button>
+  </div>
+</div>
 
       <div className="ml-10">
         <div className="flex flex-col items-center justify-center mt-14 font-bold text-4xl">
-          <h2>
-            <b>BEM VINDO à</b> Clínica de Estética Dona Beleza
-          </h2>
+           {usuario && (
+          <h1 className="flex flex-col items-center text-2xl font-bold mb-4 mt-5">
+            Olá {usuario}!, venha renovar sua beleza ainda hoje
+          </h1>
+        )}
+          
           <Image
             className="mt-10  border-2 border-gray-100"
             src="/back.png"
@@ -72,16 +91,10 @@ export default function Painel() {
             height={300}
           />
         </div>
-
-        {usuario && (
-          <h1 className="flex flex-col items-center text-2xl font-bold mb-4 mt-5">
-            Olá, {usuario}!, venha renovar sua beleza ainda hoje
-          </h1>
-        )}
-
         <h2 className="flex flex-col items-center mt-10 text-lg">
           Temos tratamento especializado para sua estética, sempre inovando e renovando sua beleza
         </h2>
+        <br></br>
         <h2 className="text-lg flex flex-col items-center">Conheça nossos serviços</h2>
 
         {/* CARROSSEL DE IMAGENS*/}
