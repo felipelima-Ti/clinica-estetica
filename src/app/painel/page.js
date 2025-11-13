@@ -102,12 +102,44 @@ export default function Painel() {
             height={300}
           />
         </div>
+        <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10 px-6">
+           <div className="md:w-1/2">
+            <h3 className="font-semibold mb-3 mt-20 ml text-rose-200 ml">A CLÍNICA</h3>
+            <h3 className="text-xl font-semibold mb-3 ml">Um espaço moderno para melhor te atender!</h3>
+            <p className="ml ml-15">
+             Experiência única e humana, baseada na verdade e na<br></br> transparência para seu completo bem-estar e beleza. Atuando<br></br> sempre de forma segura e profissional, aliando conhecimento<br></br> médico, experiência e principalmente, a conexão entre pessoas<br></br> para melhor entender e proporcionar um resultado<br></br> surpreendente.
+
+A Dona Beleza traz o mais novo conceito em<br></br> Dermatologia, aliando o profissionalismo e a seriedade com o <br></br>conforto e bem-estar de seus pacientes.<br></br>
+
+Modernidade e elegância compõem nossas instalações que<br></br> foram planejadas para receber e tratar cada paciente de forma<br></br> individualizada, personalizada e com toda a atenção<br></br> necessária.
+
+Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualizações constantes em relação a novos<br></br> tratamentos e procedimentos com o objetivo de oferecer qualidade,<br></br> segurança e o melhor possível a todos que nos procuram.
+            </p>
+          </div>
+          <div className="md:w-1/2 mt-10">
+             <Image src="/clinicaa.jpg" width={900} height={200} alt=""/>
+          </div>
+        </div>
+        <div className=" text-xl mt-10 flex flex-col items-center"><p><b>Temos os melhores profissionais na area junto com um ambiente agradavel e relaxante</b></p>
+        
+        </div>
+       <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-10">
+  <div className="md:w-11/4 m-1">
+    <Image src="/clinica1.jpg" width={400} height={200} alt="" className="" />
+  </div>
+   <div className="md:w-12/4 m-1">
+    <Image src="/UI.jpg" width={400} height={200} alt="" className="" />
+  </div>
+  <div className="md:w-33/4 m-1">
+    <Image src="/clinica4.jpeg" width={585} height={200} alt="" className="" />
+  </div> 
+</div>
+<div className="text-xl mt-10 flex flex-col ml-30">
+<p>Temos o melhor atendimento com os nossos melhores serviços 👉 <br></br></p>
+</div>
         <section id="servicos">
-        <h2 className="flex flex-col items-center mt-10 text-lg">
-          Temos tratamento especializado para sua estética, sempre inovando e renovando sua beleza
-        </h2>
         <br></br>
-        <h2 className="text-lg flex flex-col items-center">Conheça nossos serviços</h2>
+        <h2 className="text-lg flex flex-col items-center">Conheça todos os nossos serviços</h2>
 
         {/* CARROSSEL DE IMAGENS*/}
         <div className="relative w-full max-w-2xl mx-auto mt-10">
@@ -136,6 +168,9 @@ export default function Painel() {
           </div>
         </div>
             </section>
+            <h1 className="flex flex-col items-center mt-8 text-2xl text-rose-200">
+          Nós valorizamos sua Beleza!
+        </h1>
         <h1 className="flex flex-col items-center mt-8 text-2xl">
           O que você está esperando? Agende agora no botão abaixo
         </h1>
