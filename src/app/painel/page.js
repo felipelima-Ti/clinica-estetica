@@ -124,22 +124,26 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
         
         </div>
        <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-10">
-  <div className="md:w-11/4 m-1">
+  <div className="md:w-16/4 m-1">
     <Image src="/clinica1.jpg" width={400} height={200} alt="" className="" />
   </div>
-   <div className="md:w-12/4 m-1">
+   <div className="md:w-18/4 m-1">
     <Image src="/UI.jpg" width={400} height={200} alt="" className="" />
   </div>
+  
   <div className="md:w-33/4 m-1">
-    <Image src="/clinica4.jpeg" width={585} height={200} alt="" className="" />
+    <Image src="/clinica4.jpeg" width={685} height={200} alt="" className="" />
+  </div> 
+  <div className="md:w-13/4 m-1">
+    <Image src="/AS.jpg" width={295} height={200} alt="" className="" />
   </div> 
 </div>
-<div className="text-xl mt-10 flex flex-col ml-30">
-<p>Temos o melhor atendimento com os nossos melhores serviços 👉 <br></br></p>
+<div className="text-xl mt-10 flex flex-col ml-15 mr-20">
+<p>O melhor atendimento com os melhores serviços 👉 <br></br></p>
 </div>
         <section id="servicos">
         <br></br>
-        <h2 className="text-lg flex flex-col items-center">Conheça todos os nossos serviços</h2>
+        <h2 className="text-xl flex flex-col items-center">Conheça todos os nossos serviços</h2>
 
         {/* CARROSSEL DE IMAGENS*/}
         <div className="relative w-full max-w-2xl mx-auto mt-10">
