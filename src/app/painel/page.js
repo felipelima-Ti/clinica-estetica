@@ -98,7 +98,7 @@ export default function Painel() {
             className="mt-10  border-2 border-gray-100"
             src="/back.png"
             alt="A"
-            width={1000}
+            width={1200}
             height={300}
           />
         </div>
@@ -120,21 +120,21 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
              <Image src="/clinicaa.jpg" width={900} height={200} alt=""/>
           </div>
         </div>
-        <div className=" text-xl mt-10 flex flex-col items-center"><p><b>Temos os melhores profissionais na area junto com um ambiente agradavel e relaxante</b></p>
+        <div className=" text-xl mt-10 flex flex-col items-center m-2"><p><b>Temos os melhores profissionais na area junto com um ambiente agradavel e relaxante</b></p>
         
         </div>
        <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-10">
-  <div className="md:w-16/4 m-1">
+  <div className="md:w-16/4 m-3">
     <Image src="/clinica1.jpg" width={400} height={200} alt="" className="" />
   </div>
-   <div className="md:w-18/4 m-1">
+   <div className="md:w-18/4 m-3">
     <Image src="/UI.jpg" width={400} height={200} alt="" className="" />
   </div>
   
-  <div className="md:w-33/4 m-1">
+  <div className="md:w-33/4 m-3">
     <Image src="/clinica4.jpeg" width={685} height={200} alt="" className="" />
   </div> 
-  <div className="md:w-13/4 m-1">
+  <div className="md:w-13/4 m-3">
     <Image src="/AS.jpg" width={295} height={200} alt="" className="" />
   </div> 
 </div>
@@ -143,7 +143,7 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
 </div>
         <section id="servicos">
         <br></br>
-        <h2 className="text-xl flex flex-col items-center">Conheça todos os nossos serviços</h2>
+        <h2 className="text-xl flex flex-col items-center mr-20">Conheça todos os nossos serviços</h2>
 
         {/* CARROSSEL DE IMAGENS*/}
         <div className="relative w-full max-w-2xl mx-auto mt-10">
