@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import styles from "./suporte.module.css";
+import "./suporte.css"
 import Image from "next/image";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
@@ -44,15 +44,15 @@ export default function Suport() {
   }, []);
 
   return (
-     <div className={styles.page}>
-      <section className={styles.card} aria-labelledby="support-title">
+    <main className="page">
+      <section className="card" aria-labelledby="support-title">
 
-        <div className={styles.intro}>
-          <div className={styles.logo}>
-            <div className={styles.dot}>S</div>
+        <div className="intro">
+          <div className="logo">
+            <div className="dot">S</div>
             <div>
-              <div className={styles["logo-title"]}>Central de Suporte</div>
-              <div className={styles["logo-sub"]}>Estamos aqui para ajudar</div>
+              <div className="logo-title">Central de Suporte</div>
+              <div className="logo-sub">Estamos aqui para ajudar</div>
             </div>
           </div>
 
@@ -61,45 +61,55 @@ export default function Suport() {
             Sinta-se à vontade para falar conosco
           </h1>
 
-          <p className={styles.lead}>
+          <p className="lead">
             Envie-nos uma mensagem pelo formulário ao lado. Respondemos em até 24 horas úteis.
           </p>
 
-          <form className={styles.form}>
-            <label className={styles.lb}>Nome</label>
-            <input className={styles.inp} name="name" required placeholder="Seu nome" />
+          {/* FORMULÁRIO */}
+          <form onSubmit={handleSubmit} className="form">
+            <label className="lb">Nome</label>
+            <input className="inp" name="name" required placeholder="Seu nome" />
 
-            <div className={styles.row}>
-              <div className={styles.col}>
-                <label className={styles.lb}>E-mail</label>
-                <input className={styles.inp} name="email" type="email" required placeholder="seu@exemplo.com" />
+            <div className="row">
+              <div className="col">
+                <label className="lb">E-mail</label>
+                <input className="inp"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="seu@exemplo.com"
+                />
               </div>
 
-              <div className={styles.col}>
-                <label className={styles.lb}>Assunto</label>
-                <select className={`${styles.slc} op`} name="category">
-                  <option value="duvida">Dúvida</option>
-                  <option value="bug">Relatar bug</option>
-                  <option value="financeiro">Financeiro</option>
-                  <option value="outro">Outro</option>
+              <div className="col">
+                <label className="lb">Assunto</label>
+                <select className="slc" name="category">
+                  <option className="op" value="duvida">Dúvida</option>
+                  <option className="op" value="bug">Relatar bug</option>
+                  <option className="op" value="financeiro">Financeiro</option>
+                  <option className="op" value="outro">Outro</option>
                 </select>
               </div>
             </div>
 
-            <label className={styles.lb}>Mensagem</label>
-            <textarea className={styles.txt} name="message" required placeholder="Descreva sua mensagem..." />
+            <label className="lb">Mensagem</label>
+            <textarea className="txt"
+              name="message"
+              required
+              placeholder="Descreva sua mensagem..."
+            />
 
-            <button type="submit" className={styles.btn}>
+            <button type="submit" className="btn">
               Enviar solicitação
             </button>
 
-            <div className={styles.small}>
-              Ao enviar faremos o retorno pelo seu e-mail cadastrado.
+            <div className="small">
+             ao enviar faremos o retorno pelo o seu email cadastrado.
             </div>
           </form>
         </div>
 
       </section>
-    </div>
+    </main>
   );
 }
