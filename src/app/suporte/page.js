@@ -17,7 +17,7 @@ const handleSubmit = async (e) => {
   const form = new FormData(e.target);
   const data = Object.fromEntries(form.entries());
 
-  const res = await fetch("https://clinica-estetica-...vercel.app/api/suporte", {
+  const res = await fetch("https://clinica-estetica-5ds76gefe-felipelima-tis-projects.vercel.app/suporte", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(data),
