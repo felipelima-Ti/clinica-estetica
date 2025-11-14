@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import "./suporte.css";
+import styles from "./suporte.module.css";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
@@ -44,15 +44,15 @@ export default function Suport() {
   }, []);
 
   return (
-    <main className="page">
-      <section className="card" aria-labelledby="support-title">
+     <div className={styles.page}>
+      <section className={styles.card} aria-labelledby="support-title">
 
-        <div className="intro">
-          <div className="logo">
-            <div className="dot">S</div>
+        <div className={styles.intro}>
+          <div className={styles.logo}>
+            <div className={styles.dot}>S</div>
             <div>
-              <div className="logo-title">Central de Suporte</div>
-              <div className="logo-sub">Estamos aqui para ajudar</div>
+              <div className={styles["logo-title"]}>Central de Suporte</div>
+              <div className={styles["logo-sub"]}>Estamos aqui para ajudar</div>
             </div>
           </div>
 
@@ -61,29 +61,23 @@ export default function Suport() {
             Sinta-se à vontade para falar conosco
           </h1>
 
-          <p className="lead">
+          <p className={styles.lead}>
             Envie-nos uma mensagem pelo formulário ao lado. Respondemos em até 24 horas úteis.
           </p>
 
-          {/* FORMULÁRIO */}
-          <form onSubmit={handleSubmit} className="form">
-            <label>Nome</label>
-            <input name="name" required placeholder="Seu nome" />
+          <form className={styles.form}>
+            <label className={styles.lb}>Nome</label>
+            <input className={styles.inp} name="name" required placeholder="Seu nome" />
 
-            <div className="row">
-              <div className="col">
-                <label>E-mail</label>
-                <input
-                  name="email"
-                  type="email"
-                  required
-                  placeholder="seu@exemplo.com"
-                />
+            <div className={styles.row}>
+              <div className={styles.col}>
+                <label className={styles.lb}>E-mail</label>
+                <input className={styles.inp} name="email" type="email" required placeholder="seu@exemplo.com" />
               </div>
 
-              <div className="col">
-                <label>Assunto</label>
-                <select name="category">
+              <div className={styles.col}>
+                <label className={styles.lb}>Assunto</label>
+                <select className={`${styles.slc} op`} name="category">
                   <option value="duvida">Dúvida</option>
                   <option value="bug">Relatar bug</option>
                   <option value="financeiro">Financeiro</option>
@@ -92,24 +86,20 @@ export default function Suport() {
               </div>
             </div>
 
-            <label>Mensagem</label>
-            <textarea
-              name="message"
-              required
-              placeholder="Descreva sua mensagem..."
-            />
+            <label className={styles.lb}>Mensagem</label>
+            <textarea className={styles.txt} name="message" required placeholder="Descreva sua mensagem..." />
 
-            <button type="submit" className="btn">
+            <button type="submit" className={styles.btn}>
               Enviar solicitação
             </button>
 
-            <div className="small">
-             ao enviar faremos o retorno pelo o seu email cadastrado.
+            <div className={styles.small}>
+              Ao enviar faremos o retorno pelo seu e-mail cadastrado.
             </div>
           </form>
         </div>
 
       </section>
-    </main>
+    </div>
   );
 }

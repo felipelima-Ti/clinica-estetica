@@ -186,7 +186,10 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
             <Link href="/agenda">Agendar atendimento</Link>
           </button>
         </div>
-        
+        <div className="mb-10"><p>Precisa de ajuda?</p>
+            <p>Mande uma mensagem para gente no canal de suporte!</p>
+            <Link className="text-rose-200" href="/suporte">Envie sua mensagem</Link>
+        </div>
       </div>
 
       {/*RODAPE*/}
@@ -253,7 +256,7 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
         </div>
 
         <div className="text-center mt-10 border-t border-black pt-4 text-sm">
-          © 2018 | Dona Beleza. Todos os Direitos Reservados | Design por{" "}
+          © 2018 | Dona Beleza. Todos os Direitos Reservados | Design por
           <a href="https://www.instagram.com/felipelimahbl/" className="underline">
             Felipe
           </a>

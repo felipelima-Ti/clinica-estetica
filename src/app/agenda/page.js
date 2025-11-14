@@ -1,16 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import {
-  addDoc,
-  collection,
-  Timestamp,
-  query,
-  where,
-  getDocs,
-} from "firebase/firestore";
+import {addDoc,collection,Timestamp,query,where,getDocs,} from "firebase/firestore";
 import { db } from "../lib/firebaseConfig";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
 export default function Agenda() {
   const [usuario, setUsuario] = useState("");
   const [form, setForm] = useState({
@@ -128,13 +121,32 @@ export default function Agenda() {
         </p>
       )}
         <div className="ml-10">
-          <p className="font-bold">Tabela de preços</p>
-          <p>Limpeza de pele: <b>90R$</b></p>
-          <p>Massagem Relaxante: <b>70R$</b></p>
-          <p>Depilaçao a laser: <b>100R$</b></p>
-          <p>Tratamento facial: <b>120R$</b></p>
-          <p>Tratamento de Cabelo: <b>150R$</b></p>
-        </div>
+  <p className="font-bold mb-5">Tabela de preços de nossos serviços</p>
+</div>
+  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+    <Image src="/pele.jpg" width={70} height={100} alt="" className="border border-white" />
+    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Limpeza de pele: <b>90R$</b></p>
+  </div>
+
+  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start m-2">
+    <Image src="/masagem.jpg" width={70} height={100} alt="" className="border border-white" />
+    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Massagem Relaxante: <b>70R$</b></p>
+  </div>
+
+  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+    <Image src="/laser.jpg" width={70} height={100} alt="" className="border border-white" />
+    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Depilação a laser: <b>100R$</b></p>
+  </div>
+
+  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+    <Image src="/facial.jpeg" width={70} height={100} alt="" className="border border-white" />
+    <p className="md:w-260/1 mt-0 ml-2 md:ml-2">Tratamento facial: <b>120R$</b></p>
+  </div>
+
+  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+    <Image src="/cabelo.jpg" width={70} height={100} alt="" className="border border-white" />
+    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Tratamento de Cabelo: <b>150R$</b></p>
+  </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-4 border-2 border-gray-200 p-6 rounded-2xl shadow-lg text-white m-5"
