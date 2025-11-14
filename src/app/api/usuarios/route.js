@@ -21,7 +21,7 @@ export async function POST(req) {
       
       return new Response(
         JSON.stringify({ error: "Nome de usuário já cadastrado. Escolha outro." }),
-        { status: 409 } // código HTTP 409 = conflito
+        { status: 409 } // código HTTP 409 conflito
       );
     }
 
@@ -39,7 +39,7 @@ export async function POST(req) {
 
   }
   catch (error) {
-    console.error("🔥 Erro ao adicionar usuário:", error);
+    console.error("Erro ao adicionar usuário:", error);
     return new Response(
       JSON.stringify({ error: "Erro ao adicionar usuário" }),
       { status: 500 }
