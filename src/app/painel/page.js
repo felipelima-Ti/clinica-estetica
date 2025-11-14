@@ -95,7 +95,7 @@ export default function Painel() {
         )}
           
           <Image
-            className="mt-10  border-2 border-gray-100"
+            className="mt-10 border-2 border-gray-100 ml-0 mr-10"
             src="/back.png"
             alt="A"
             width={1200}
