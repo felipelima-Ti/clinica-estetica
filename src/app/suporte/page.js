@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from "react";
 import "./suporte.css";
+import Image from "next/image";
+import { Roboto } from "next/font/google";
+import Link from "next/link";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 const handleSubmit = async (e) => {
   e.preventDefault();
