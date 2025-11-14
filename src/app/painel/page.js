@@ -143,7 +143,7 @@ Para isso dispomos de lasers e equipamentos<br></br> modernos, além de atualiza
 </div>
         <section id="servicos">
         <br></br>
-        <h2 className="text-xl flex flex-col items-center mr-14">Conheça todos os nossos serviços já!</h2>
+        <h2 className="text-xl flex flex-col items-center mr-14">Conheça todos os nossos serviços</h2>
 
         {/* CARROSSEL DE IMAGENS*/}
         <div className="relative w-full max-w-2xl mx-auto mt-10">
