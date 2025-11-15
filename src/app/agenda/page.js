@@ -111,7 +111,7 @@ export default function Agenda() {
 
   return (
     <div className="agenda-container">
-      <h2 className="flex flex-col items-center mt-5 text-xl">
+      <h2 className="flex flex-col items-center mt-5 text-xl text-rose-300">
         Agendar atendimento
       </h2>
 
@@ -123,29 +123,28 @@ export default function Agenda() {
         <div className="ml-10">
   <p className="font-bold mb-5">Tabela de preços de nossos serviços</p>
 </div>
-  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
-    <Image src="/pele.jpg" width={70} height={100} alt="" className="border border-white" />
-    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Limpeza de pele: <b>90R$</b></p>
+  <div className="flex items-center">
+    <Image src="/pele.jpg" width={70} height={100} alt="" className="border border-white ml-10" />
+    <p className="ml-5">Limpeza de pele: <b className="text-rose-300">90R$</b></p>
   </div>
 
-  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start m-2">
+  <div className="flex items-center mt-5 ml-10">
     <Image src="/masagem.jpg" width={70} height={100} alt="" className="border border-white" />
-    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Massagem Relaxante: <b>70R$</b></p>
+    <p className="ml-5">Massagem Relaxante: <b className="text-rose-300">70R$</b></p>
   </div>
 
-  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+  <div className="flex items-center mt-5 ml-10">
     <Image src="/laser.jpg" width={70} height={100} alt="" className="border border-white" />
-    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Depilação a laser: <b>100R$</b></p>
+    <p className="ml-5">Depilação a laser: <b className="text-rose-300">100R$</b></p>
   </div>
 
-  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
-    <Image src="/facial.jpeg" width={70} height={100} alt="" className="border border-white" />
-    <p className="md:w-260/1 mt-0 ml-2 md:ml-2">Tratamento facial: <b>120R$</b></p>
-  </div>
-
-  <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-2">
+  <div className="flex items-center mt-5 ml-10">
     <Image src="/cabelo.jpg" width={70} height={100} alt="" className="border border-white" />
-    <p className="md:w-1/1 mt-0 ml-2 md:ml-2">Tratamento de Cabelo: <b>150R$</b></p>
+    <p className="ml-5">Tratamento de Cabelo: <b className="text-rose-300">150R$</b></p>
+  </div>
+   <div className="flex items-center mt-5 ml-10">
+    <Image src="/facial.jpeg" width={75} height={100} alt="" className="border border-white" />
+    <p className="ml-5">Tratamento facial: <b className="text-rose-300">120R$</b></p>
   </div>
       <form
         onSubmit={handleSubmit}
