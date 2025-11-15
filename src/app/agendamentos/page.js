@@ -74,7 +74,8 @@ export default function Agendamentos() {
 
   return (
     <div className="agendamentos-container border-b pb-20 mb-20 border-rose-300">
-      <h2 className="text-xl mt-5 flex flex-col items-center border-b border-rose-300 pb-20 justify-center">Meus Agendamentos</h2>
+      <h2 className="text-xl mt-5 flex flex-col items-center border-b border-rose-300 pb-20 justify-center">Meus Agendamentos<br></br></h2>
+     
 
       {usuario && (
         <p className="m-5 text-lg ml-10 mt-10">
@@ -119,6 +120,7 @@ export default function Agendamentos() {
   ) : (
     <p>Você ainda não tem agendamentos...</p>
   )}
+  <p className=" ml-10 mt-10 text-lg mr-10"><b className="text-rose-300">Obs: </b>em caso de cancelamento informe porfavor em 5 horas antes</p>
 </div>
 </div>
   );
