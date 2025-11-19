@@ -38,7 +38,7 @@ export default function Painel() {
         <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-40"
         >
           <div className="flex items-center justify-center space-x-3">
-            <Image className="" src="/fundo.png" width={50} height={50} alt="Logo" />
+            <Image src="/fundo.png" width={50} height={50} alt="Logo" />
 
             <span className="font-bold text-lg">Dona Beleza</span>
           </div>
@@ -137,12 +137,16 @@ export default function Painel() {
               <Image src="/AS.jpg" width={295} height={200} alt="" className="" />
             </div>
           </div>
-          <div className="text-xl mt-10 flex flex-col ml-15 mr-20">
-            <p>O melhor atendimento com os melhores serviços 👉 <br></br></p>
+          <div className=" text-2xl items-center mt-10 flex flex-col mr-10">
+            <p>Preparado para renovar sua beleza e <br></br> conquistar Sua melhor versão?</p> <br></br>
+          </div>
+          <p className=" text-xs flex flex-col items-center mt-5 mr-10 ">Oferecemos tratamentos avançados e personalizados ainda mais sua beleza e elevar sua autoestima</p>
+          <div className="flex flex items-center justify-center mr-10">
+          <Image src="/fundo2.png" width={800} height={10} alt="" className="mt-10 mb-5"/>
           </div>
           <section id="servicos">
             <br></br>
-            <h2 className="text-xl flex flex-col items-center mr-14">Conheça todos os nossos serviços</h2>
+            <h2 className="text-xl flex flex-col items-center mr-14">Conheça todos os nossos serviços disponiveis</h2>
 
             {/* CARROSSEL DE IMAGENS*/}
             <div className="relative w-full max-w-2xl mx-auto mt-10">
@@ -170,7 +174,7 @@ export default function Painel() {
                 </div>
             </div>
             </div>
-          </section>
+          
           <h1 className="flex flex-col items-center mt-8 text-2xl text-rose-200">
             Nós valorizamos sua Beleza!
           </h1>
@@ -185,6 +189,7 @@ export default function Painel() {
               <Link href="/agenda">Agendar atendimento</Link>
             </button>
           </div>
+          </section>
           <div className="mb-10"><p>Precisa de ajuda?</p>
             <p>Mande uma mensagem para gente no canal de suporte!</p>
             <Link className="text-rose-200" href="/suporte">Envie sua mensagem</Link>
@@ -192,6 +197,9 @@ export default function Painel() {
         </div>
 
         {/*RODAPE*/}
+        <div className="bg-black justify-center flex flex-col items-center">
+         <Image src="/fundo.png" width={70} height={50} alt="Logo" />
+         </div>
         <footer className="bg-red-200 text-black py-10">
           <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10 px-6">
             <div className="md:w-1/4">
