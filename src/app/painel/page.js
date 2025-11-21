@@ -8,6 +8,8 @@ export default function Painel() {
   const [usuario, setUsuario] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
    const revealRef = useReveal();
+   const imgRef = useReveal();
+   const imgRef2 = useReveal();
 
   const cards = [
     { src: "/estetica.jpg", label: "Limpeza de pele" },
@@ -107,7 +109,7 @@ export default function Painel() {
             <div className="md:w-1/2">
               <h3 className="font-semibold mb-3 mt-20 ml text-rose-200 ml">A CLÍNICA</h3>
               <h3 className="text-xl font-semibold mb-3 ml">Um espaço moderno para melhor te atender!</h3>
-              <p ref={revealRef} className="ml ml-15 opacity-0 translate-y-2 transtion-all duration-3000">
+              <p ref={revealRef} className="ml ml-15 opacity-0 translate-y-2 transtion-all duration-1000">
                 Experiência única e humana, baseada na verdade e na<br></br> transparência para seu completo bem-estar e beleza. Atuando<br></br> sempre de forma segura e profissional, aliando conhecimento<br></br> médico, experiência e principalmente, a conexão entre pessoas<br></br> para melhor entender e proporcionar um resultado<br></br> surpreendente.
 
                 A Dona Beleza traz o mais novo conceito em<br></br> Dermatologia, aliando o profissionalismo e a seriedade com o <br></br>conforto e bem-estar de seus pacientes.<br></br>
@@ -118,7 +120,7 @@ export default function Painel() {
               </p>
             </div>
             <div className="md:w-1/2 mt-10">
-              <Image src="/clinicaa.jpg" width={900} height={200} alt="" />
+              <Image ref={imgRef} src="/clinicaa.jpg" width={900} height={200} alt="" className="opacity-0 translate-y-5 transition-all duration-1500 rounded-xl" />
             </div>
           </div>
           <div className=" text-xl mt-10 flex flex-col items-center m-2"><p><b>Temos os melhores profissionais na area junto com um ambiente agradavel e relaxante</b></p>
@@ -144,7 +146,7 @@ export default function Painel() {
           </div>
           <p className=" text-xs flex flex-col items-center mt-5 mr-10 ">Oferecemos tratamentos avançados e personalizados ainda mais sua beleza e elevar sua autoestima</p>
           <div className="flex flex items-center justify-center mr-10">
-          <Image src="/fundo2.png" width={800} height={10} alt="" className="mt-10 mb-5"/>
+          <Image ref={imgRef2} src="/fundo2.png" width={800} height={10} alt="" className="mt-10 mb-5 opacity-0 translate-y-5 transition-all duration-2000 rounded-xl"/>
           </div>
           <section id="servicos">
             <br></br>
