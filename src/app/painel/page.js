@@ -2,10 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useReveal } from "@/app/hooks/useReveal";
 
 export default function Painel() {
   const [usuario, setUsuario] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+   const revealRef = useReveal();
 
   const cards = [
     { src: "/estetica.jpg", label: "Limpeza de pele" },
@@ -105,7 +107,7 @@ export default function Painel() {
             <div className="md:w-1/2">
               <h3 className="font-semibold mb-3 mt-20 ml text-rose-200 ml">A CLÍNICA</h3>
               <h3 className="text-xl font-semibold mb-3 ml">Um espaço moderno para melhor te atender!</h3>
-              <p className="ml ml-15">
+              <p ref={revealRef} className="ml ml-15 opacity-0 translate-y-2 transtion-all duration-3000">
                 Experiência única e humana, baseada na verdade e na<br></br> transparência para seu completo bem-estar e beleza. Atuando<br></br> sempre de forma segura e profissional, aliando conhecimento<br></br> médico, experiência e principalmente, a conexão entre pessoas<br></br> para melhor entender e proporcionar um resultado<br></br> surpreendente.
 
                 A Dona Beleza traz o mais novo conceito em<br></br> Dermatologia, aliando o profissionalismo e a seriedade com o <br></br>conforto e bem-estar de seus pacientes.<br></br>
