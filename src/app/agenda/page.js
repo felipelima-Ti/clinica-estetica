@@ -101,13 +101,11 @@ Obs: ${form.observacoes || "Nenhuma"}
 `;
 
 const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+alert("Agendamento feito com sucesso! enviaremos o WhatsApp de confirmação.");
 window.open(url, "_blank");
 
-alert("Agendamento feito com sucesso!");
 router.push("/painel");
-      
-    alert("Agendamento feito com sucesso!");
-    router.push("/painel");
+
   } catch (error) {
     console.error("Erro ao salvar agendamento:", error);
     alert("Erro ao agendar. Tente novamente.");
