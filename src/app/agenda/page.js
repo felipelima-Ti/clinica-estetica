@@ -87,26 +87,33 @@ export default function Agenda() {
         observacoes: form.observacoes,
         criadoEm: Timestamp.now(),
       });
+      const numeroWhatsApp = "5532988934044"; // substitua pelo seu número!
+
+const mensagem = `
+Novo agendamento recebido ✔
+
+👤 Nome: ${usuario}
+💆 Serviço: ${form.servico}
+📅 Data: ${form.data}
+⏰ Hora: ${form.hora}
+
+Obs: ${form.observacoes || "Nenhuma"}
+`;
+
+const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+window.open(url, "_blank");
+
+alert("Agendamento feito com sucesso!");
+router.push("/painel");
       
-      await fetch("/api/whatsapp", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    nome: usuario,
-    servico: form.servico,
-    data: form.data,
-    hora: form.hora,
-  }),
-});
-      alert("Agendamento feito com sucesso!");
-      router.push("/painel");
-      setForm({ servico: "", data: "", hora: "", observacoes: "" });
-      setHorariosDisponiveis([]);
-    } catch (error) {
-      console.error("Erro ao salvar agendamento:", error);
-      alert("Erro ao agendar. Tente novamente.");
+    alert("Agendamento feito com sucesso!");
+    router.push("/painel");
+  } catch (error) {
+    console.error("Erro ao salvar agendamento:", error);
+    alert("Erro ao agendar. Tente novamente.");
     }
   };
+  
 
   return (
     <div className="agenda-container">
