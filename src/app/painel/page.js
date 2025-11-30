@@ -195,7 +195,7 @@ export default function Painel() {
           </div>
           </section>
           <div className="mb-10"><p>Precisa de ajuda?</p>
-            <p>Mande uma mensagem para gente no canal de suporte!</p>
+            <p className="mr-3">Mande uma mensagem para gente no canal de suporte!</p>
             <Link className="text-rose-200" href="/suporte">Envie sua mensagem</Link>
           </div>
         </div>

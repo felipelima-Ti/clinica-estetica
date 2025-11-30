@@ -44,9 +44,37 @@ export default function Suport() {
   }, []);
 
   return (
-    <main className="page">
-      <section className="card" aria-labelledby="support-title">
+    <div>
+        <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-20"
+        >
+          <div className="flex items-center justify-center space-x-3">
+            <Image src="/fundo.png" width={50} height={50} alt="Logo" />
 
+            <span className="font-bold text-lg">Dona Beleza</span>
+          </div>
+
+          <ul className="flex space-x-10">
+            <li>
+              <Link href="/agenda" className="hover:text-gray-400 transition-colors">
+                Agendar
+              </Link>
+            </li>
+            <li>
+              <Link href="/agendamentos" className="hover:text-gray-400 transition-colors">
+                Minha agenda
+              </Link>
+            </li>
+            <li>
+              <Link href="/painel" className="hover:text-gray-400 transition-colors">
+                Home
+              </Link>
+            </li>
+          </ul>
+        </header>
+    <main className="page">
+  
+      <section className="card" aria-labelledby="support-title">
+       
         <div className="intro">
           <div className="logo">
             <div className="dot">S</div>
@@ -111,5 +139,6 @@ export default function Suport() {
 
       </section>
     </main>
+    </div>
   );
 }

@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "../lib/firebaseConfig";
 import { doc, deleteDoc } from "firebase/firestore";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Agendamentos() {
   const [usuario, setUsuario] = useState("");
@@ -73,8 +75,36 @@ export default function Agendamentos() {
   };
 
   return (
-    <div className="agendamentos-container border-b pb-20 mb-20 border-rose-300">
-      <h2 className="text-xl mt-5 flex flex-col items-center border-b border-rose-300 pb-20 justify-center">Meus Agendamentos<br></br></h2>
+    <div>
+       <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-20 mb-20"
+        >
+          <div className="flex items-center justify-center space-x-3">
+            <Image src="/fundo.png" width={50} height={50} alt="Logo" />
+
+            <span className="font-bold text-lg">Dona Beleza</span>
+          </div>
+
+          <ul className="flex space-x-10">
+            <li>
+              <Link href="/agenda" className="hover:text-gray-400 transition-colors">
+                Agendar
+              </Link>
+            </li>
+            <li>
+               <Link href="/painel" className="hover:text-gray-400 transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>
+            <Link href="/suporte" className="hover:text-gray-400 transition-colors">
+                Suporte
+              </Link>
+            </li>
+          </ul>
+        </header>
+        <h2 className="text-xl mt-5 flex flex-col items-center pb-20 justify-center">Meus Agendamentos<br></br></h2>
+    <div className="agendamentos-container border pb-20 mb-20 border-rose-300 m-2 ">
+      
      
 
       {usuario && (
@@ -102,7 +132,7 @@ export default function Agendamentos() {
       agendamentos.map((agendamento) => (
       <div
         key={agendamento.id}
-        className="agendamento-item p-4 border-1 border-rose-300 m-10 p-2 rounded-xl"
+        className="agendamento-item p-4 border-1 border-rose-300 m-10 p-2 rounded-xl bg-rose-200 text-black"
       >
         <h3 className="text-lg">Serviço: {agendamento.servico}</h3>
         <p><strong>Data:</strong> {agendamento.data}</p>
@@ -111,7 +141,7 @@ export default function Agendamentos() {
 
         <button
           onClick={() => excluirAgendamento(agendamento.id)}
-          className=" bg-red-300 border-1 border-white-400 p-2 mt-3 rounded-xl w-30"
+          className=" bg-red-300 border-1 border-white-400 p-2 mt-3 rounded-xl w-30 font-bold"
         >
          Cancelar
         </button>
@@ -121,6 +151,7 @@ export default function Agendamentos() {
     <p>Você ainda não tem agendamentos...</p>
   )}
   <p className=" ml-10 mt-10 text-lg mr-10"><b className="text-rose-300">Obs: </b>em caso de cancelamento informe porfavor em 5 horas antes</p>
+</div>
 </div>
 </div>
   );

@@ -4,6 +4,7 @@ import {addDoc,collection,Timestamp,query,where,getDocs,} from "firebase/firesto
 import { db } from "../lib/firebaseConfig";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 export default function Agenda() {
   const [usuario, setUsuario] = useState("");
   const [form, setForm] = useState({
@@ -114,18 +115,44 @@ router.push("/painel");
   
 
   return (
-    <div className="agenda-container">
-      <h2 className="flex flex-col items-center mt-5 text-xl text-rose-300">
+    <div className="agenda-container mb-25">
+       <header className="flex items-center justify-between p-3 border-b border-gray-200 bg-black text-white w-full h-20 mb-20"
+        >
+          <div className="flex items-center justify-center space-x-3">
+            <Image src="/fundo.png" width={50} height={50} alt="Logo" />
+
+            <span className="font-bold text-lg">Dona Beleza</span>
+          </div>
+
+          <ul className="flex space-x-10">
+            <li>
+             <Link href="/painel" className="hover:text-gray-400 transition-colors">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/agendamentos" className="hover:text-gray-400 transition-colors">
+                Minha agenda
+              </Link>
+            </li>
+            <li>
+            <Link href="/suporte" className="hover:text-gray-400 transition-colors">
+                Suporte
+              </Link>
+            </li>
+          </ul>
+        </header>
+      <h2 className="flex flex-col items-center mt-5 text-xl text-rose-300 mb-10">
         Agendar atendimento
       </h2>
 
       {usuario && (
-        <p className="m-5 text-lg">
+        <p className="m-10 text-lg mb-10">
           Nome do Cliente: <strong>{usuario}</strong>
         </p>
       )}
         <div className="ml-10">
-  <p className="font-bold mb-5">Tabela de preços de nossos serviços</p>
+  <p className="font-bold mb-10">Tabela de preços de nossos serviços</p>
 </div>
   <div className="flex items-center">
     <Image src="/pele.jpg" width={70} height={100} alt="" className="border border-white ml-10" />
