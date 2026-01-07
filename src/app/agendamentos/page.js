@@ -103,7 +103,7 @@ export default function Agendamentos() {
           </ul>
         </header>
         <h2 className="text-xl mt-5 flex flex-col items-center pb-20 justify-center">Meus Agendamentos<br></br></h2>
-    <div className="agendamentos-container border pb-20 mb-20 border-rose-300 m-2 ">
+    <div className="agendamentos-container border pb-20 mb-20 border-rose-300 m-2 rounded-xl">
       
      
 
@@ -150,7 +150,7 @@ export default function Agendamentos() {
   ) : (
     <p>Você ainda não tem agendamentos...</p>
   )}
-  <p className=" ml-10 mt-10 text-lg mr-10"><b className="text-rose-300">Obs: </b>em caso de cancelamento informe porfavor em 5 horas antes</p>
+  <p className=" ml-10 mt-10 text-lg mr-10 text-center"><b className="text-rose-300"></b>Em caso de Cancelamento voce deve informar por favor em 5 horas antes</p>
 </div>
 </div>
 </div>

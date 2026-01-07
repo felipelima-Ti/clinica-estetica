@@ -126,6 +126,7 @@ export default function Painel() {
           <div className=" text-xl mt-10 flex flex-col items-center m-2"><p><b>Temos os melhores profissionais na area junto com um ambiente agradavel e relaxante</b></p>
 
           </div>
+          <p className="text-xl text-center mt-20">Conheça o Nosso espaço</p>
           <div className="container mx-auto flex flex-col items-center md:flex-row justify-start mt-10">
             <div className="md:w-16/4 m-3">
               <Image src="/clinica1.jpg" width={400} height={200} alt="" className="" />
